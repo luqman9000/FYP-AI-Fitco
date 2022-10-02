@@ -4,24 +4,38 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.AdapterView;
+import android.widget.CompoundButton;
+import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.camera.core.CameraInfoUnavailableException;
+import androidx.camera.core.CameraSelector;
+import androidx.camera.lifecycle.ProcessCameraProvider;
 
 import com.example.a_i_fitco.R;
+import com.example.a_i_fitco.object.normal.level1.fifth.fifth_no;
+import com.example.a_i_fitco.object.overweight.level1.first.o_l1_first_cdtimer;
 import com.example.a_i_fitco.vision.CameraSource;
 import com.example.a_i_fitco.vision.CameraSourcePreview;
 import com.example.a_i_fitco.vision.GraphicOverlay;
+import com.google.android.gms.common.annotation.KeepName;
+import com.google.mlkit.common.model.LocalModel;
 //import com.example.a_i_fitco.VisionProcessorBase;
 
 import java.io.IOException;
 
-public abstract class camera_activity extends AppCompatActivity {
+public abstract class camera_activity extends AppCompatActivity implements CompoundButton.OnCheckedChangeListener {
 
     private static final int REQUEST_CAMERA = 1001;
     private static final String TAG = "MLVideoHelperActivity";
@@ -29,7 +43,6 @@ public abstract class camera_activity extends AppCompatActivity {
     private GraphicOverlay graphicOverlay;
     protected CameraSource cameraSource;
 
-    @RequiresApi(api = Build.VERSION_CODES.M)
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +51,34 @@ public abstract class camera_activity extends AppCompatActivity {
         preview = findViewById(R.id.camera_source_preview);
         graphicOverlay = findViewById(R.id.graphic_overlay);
 
-        if (checkSelfPermission(Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
+        ToggleButton facingSwitch = findViewById(R.id.facing_switch);
+        facingSwitch.setOnCheckedChangeListener(this);
+
+        if(Build.VERSION.SDK_INT>=23){
+                requestPermissions(new String[]{Manifest.permission.CAMERA}, REQUEST_CAMERA);
+            //use checkSelfPermission()
         } else {
             initSource();
             startCameraSource();
+            //simply use the required feature
+            //as the user has already granted permission to them during installation
         }
     }
+
+    @Override
+    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+        Log.d(TAG, "Set facing");
+        if (cameraSource != null) {
+            if (isChecked) {
+                cameraSource.setFacing(CameraSource.CAMERA_FACING_FRONT);
+            } else {
+                cameraSource.setFacing(CameraSource.CAMERA_FACING_BACK);
+            }
+        }
+        preview.stop();
+        startCameraSource();
+    }
+
 
     @Override
     protected void onDestroy() {
@@ -95,5 +129,33 @@ public abstract class camera_activity extends AppCompatActivity {
                 cameraSource = null;
             }
         }
+    }
+
+    @Override
+    public void onPointerCaptureChanged(boolean hasCapture) {
+        super.onPointerCaptureChanged(hasCapture);
+    }
+
+    public void onBackPressed() {
+
+
+        AlertDialog dialog = new AlertDialog.Builder(this).create();
+
+        dialog.setTitle("Exercise");
+        dialog.setMessage("You want to stop the exercise?(Your progress will not be saved) ");
+        dialog.setButton(DialogInterface.BUTTON_POSITIVE,"Yes", new DialogInterface.OnClickListener(){
+
+            public void onClick(DialogInterface dialog, int which) {
+                Intent intent = new Intent(camera_activity.this, MainMenuActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                camera_activity.this.startActivity(intent);
+            }
+        });
+        dialog.setButton(DialogInterface.BUTTON_NEGATIVE,"No", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.cancel();
+            }
+        });
+        dialog.show();
     }
 }

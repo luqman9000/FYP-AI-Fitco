@@ -3,6 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.a_i_fitco">
 
+    <uses-sdk
+        tools:overrideLibrary="
+          androidx.camera.camera2, androidx.camera.core,
+          androidx.camera.view, androidx.camera.lifecycle" />
+
+    <uses-feature android:name="android.hardware.camera"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
@@ -26,19 +35,233 @@
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:launchMode="singleInstance"
+        android:launchMode="singleTask"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.A_i_fitco"
         tools:targetApi="31">
         <activity
-            android:name=".OverweightActivity"
+            android:name=".object.normal.level2.third.n_l2_third_cdtimer"
             android:exported="false" />
         <activity
-            android:name=".NormalActivity"
+            android:name=".object.normal.level2.second.n_l2_second_cdtimer"
             android:exported="false" />
         <activity
-            android:name=".UnderweightActivity"
+            android:name=".object.normal.level2.fourth.n_l2_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.first.n_l2_first_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.third.n_l1_third_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.second.n_l1_second_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.fourth.n_l1_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.first.n_l1_first_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.first.first2_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.second.second2_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.third.third2_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.fourth.fourth2_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.fifth.fifth2_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.first.first_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.second.second_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.third.third_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.fourth.fourth_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.fifth.fifth_un"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.fourth.u_l2_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.third.u_l2_third_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.second.u_l2_second_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.first.u_l2_first_cdtimer"
+            android:exported="false" />
+
+        <activity
+            android:name=".object.normal.level1.first.first_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.second.second_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.third.third_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.fourth.fourth_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.fifth.fifth_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.first.first2_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.second.second2_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.third.third2_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.fourth.fourth2_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.fifth.fifth2_no"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.normal_level2_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.normal_level1_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level2.normal_level2_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.normal.level1.normal_level1_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.underweight_level2_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level2.underweight_level2_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.underweight_level1_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.underweight_level1_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.third.u_l1_third_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.second.u_l1_second_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.fourth.u_l1_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.underweight.level1.first.u_l1_first_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".object.overweight.level2.overweight_level2_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.third.o_l2_third_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.second.o_l2_second_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.fourth.o_l2_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.first.o_l2_first_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.overweight_level2_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.first.first2_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.second.second2_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.third.third2_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.fourth.fourth2_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level2.fifth.fifth2_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.overweight_level1_opener"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.third.o_l1_third_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.second.o_l1_second_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.fourth.o_l1_fourth_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.first.o_l1_first_cdtimer"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.overweight_level1_report"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.first.first_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.second.second_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.third.third_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.fourth.fourth_ov"
+            android:exported="false" />
+        <activity
+            android:name=".object.overweight.level1.fifth.fifth_ov"
+            android:exported="false" />
+        <activity
+            android:name=".UnderweighWorkoutStarter"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProgressList"
+            android:exported="false" />
+        <activity
+            android:name=".perfomancereport"
+            android:exported="false" />
+        <activity
+            android:name=".object.pdemoonly.demoonly"
             android:exported="false" />
         <activity
             android:name=".mainlogin"
@@ -57,13 +280,13 @@
             android:exported="false"
             android:label="@string/title_activity_login" />
         <activity
-            android:name=".finished_easy"
-            android:exported="false" />
-        <activity
-            android:name=".pcountdowntimer"
-            android:exported="false" />
-        <activity
             android:name=".object.ppushuponly.pushuponly"
+            android:exported="false" />
+        <activity
+            android:name=".object.psituponly.situponly"
+            android:exported="false" />
+        <activity
+            android:name=".object.ppushuponly1.pushuponly1"
             android:exported="false" />
         <activity
             android:name=".object.psquatonly.squatonly"
@@ -74,15 +297,6 @@
         <activity
             android:name=".camera_activity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".object.PoseDetectionActivity"
             android:screenOrientation="userPortrait" />

@@ -9,16 +9,19 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
 public class mainlogin extends AppCompatActivity {
 
     EditText username,password;
-    Button login,register;
+    TextView registerz;
+    Button login;
     DBHelper DB;
     private static String username_value;
     public static String getUsername_value(){
+
         return username_value;
     }
 
@@ -30,7 +33,7 @@ public class mainlogin extends AppCompatActivity {
         username=findViewById(R.id.l_username);
         password=findViewById(R.id.l_password);
         login=findViewById(R.id.login_button);
-        register=findViewById(R.id.register_button);
+        registerz=findViewById(R.id.textView17);
         DB= new DBHelper(this);
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -47,26 +50,11 @@ public class mainlogin extends AppCompatActivity {
                     if(chechkuserpass==true){
                         username_value=user;
                         //check status
-                        Cursor cursor = DB.checkStatus(user);
-                        if (cursor.getCount() == 0) {
-                            Toast.makeText(mainlogin.this, "No data generate", Toast.LENGTH_SHORT).show();
-                            return;
-                        }
-                        if (cursor.moveToFirst()) {
-                            do {
-                                String status = cursor.getString(0);
-                                if(status.equals("0")){
                                     Toast.makeText(mainlogin.this,"Login Successful", Toast.LENGTH_SHORT).show();
-                                    Intent intent=new Intent(getApplicationContext(),BMIActivity.class);
+                                    Intent intent=new Intent(getApplicationContext(),MainMenuActivity.class);
                                     startActivity(intent);
-                                }else{
-                                    Toast.makeText(mainlogin.this,status, Toast.LENGTH_SHORT).show();
-                                    Intent intent=new Intent(getApplicationContext(),mainregister.class);
-                                    startActivity(intent);
-                                }
 
-                            } while (cursor.moveToNext());
-                        }
+
                     }else{
                         Toast.makeText(mainlogin.this,"Login Failed", Toast.LENGTH_SHORT).show();
                     }
@@ -74,7 +62,7 @@ public class mainlogin extends AppCompatActivity {
             }
         });
 
-        register.setOnClickListener(new View.OnClickListener() {
+        registerz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(view.getContext(), mainregister.class);

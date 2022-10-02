@@ -3,17 +3,74 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/drawable-anydpi-v24/toggle_style.xml" value="0.163" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/drawable/border.xml" value="0.21" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/drawable/edittext_background.xml" value="0.1" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/drawable/roundshapebtn.xml" value="0.1445" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/drawable/toggle_style.xml" value="0.168" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_bmiactivity.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_camera2.xml" value="0.1" />
-        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_finished_easy.xml" value="0.17028985507246377" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_camera2.xml" value="0.2" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_finished_easy.xml" value="0.1" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_mainlogin.xml" value="0.2" />
-        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_mainregister.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_main2.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_main_menu.xml" value="0.25" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_mainlogin.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_mainregister.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl1_fifth_cdtimer.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl1_first_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl1_fourth_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl1_second_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl1_third_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl2_fifth_cdtimer.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl2_first_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl2_fourth_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl2_second_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_nl2_third_cdtimer.xml" value="0.264" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_normal.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_normal_level1_opener.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_normal_level1_report.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_normal_level2_opener.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_normal_level2_report.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol1_first_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol1_fourth_cdtimer.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol1_second_cdtimer.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol1_third_cdtimer.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol2_first_cdtimer.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol2_fourth_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol2_second_cdtimer.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ol2_third_cdtimer.xml" value="0.17844202898550723" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_overweight.xml" value="0.2" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_overweight_level1_opener.xml" value="0.536" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_overweight_level1_report.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_overweight_level2_opener.xml" value="0.17844202898550723" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_overweight_level2_report.xml" value="0.4" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_pcountdowntimer.xml" value="0.23809523809523808" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_pcountdowntimer1.xml" value="0.25" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_perfomancereport.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_perfomancereport1.xml" value="0.25" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_progress_list.xml" value="0.25" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_pushuponly.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_report_demo.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_reportlist.xml" value="0.22509057971014493" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul1_first_cdtimer.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul1_fourth_cdtimer.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul1_second_cdtimer.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul1_third_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul2_first_cdtimer.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul2_fourth_cdtimer.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul2_second_cdtimer.xml" value="0.1408514492753623" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_ul2_third_cdtimer.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweigh_workout_starter.xml" value="0.25" />
         <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweight.xml" value="0.11927083333333334" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweight_level1_opener.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweight_level1_report.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweight_level2_opener.xml" value="0.4" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/activity_underweight_level2_report.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/bmi_camera.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/display_progress_layout.xml" value="0.25" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/display_progress_row.xml" value="0.25" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/progressentry.xml" value="0.264" />
+        <entry key="..\:/Users/60179/AndroidStudioProjects/a_i_fitco/app/src/main/res/layout/toggle_style.xml" value="0.12907608695652173" />
       </map>
     </option>
   </component>

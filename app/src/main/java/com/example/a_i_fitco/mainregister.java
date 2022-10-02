@@ -8,10 +8,12 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class mainregister extends AppCompatActivity {
     EditText username,password,email;
+    TextView login;
     Button signup;
     DBHelper DB;
     @Override
@@ -22,6 +24,8 @@ public class mainregister extends AppCompatActivity {
         username=findViewById(R.id.usernameinput);
         password=findViewById(R.id.inputpassword);
         email=findViewById(R.id.emailinput);
+
+        login = findViewById(R.id.textView21);
 
         signup=findViewById(R.id.sregister);
         DB = new DBHelper(this);
@@ -62,6 +66,14 @@ public class mainregister extends AppCompatActivity {
 
 
 
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), mainlogin.class);
+                startActivity(intent);
             }
         });
     }
